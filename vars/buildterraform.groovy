@@ -1,4 +1,4 @@
-
+def call(){
     stage('Terraform Build') {
         echo "Building the infra with terraform"
         sh '''
@@ -10,3 +10,4 @@
                 terraform apply --auto-approve
                 '''
     }
+}
